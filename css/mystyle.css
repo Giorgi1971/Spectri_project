@@ -348,8 +348,10 @@ background-color: rgb(200, 120, 50);
 
 
 footer{
+    background-image: url("foni4.jpg");
+    height: 250px;
     bottom: 0;
     padding: 10px;
     color: rgb(200, 120, 50);
-    text-align: center;
+    text-align: left!important;
 }
