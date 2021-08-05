@@ -1,0 +1,48 @@
+table{
+    width: 100%;
+    background-color: lightgray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 10px black;
+}
+
+caption {
+    padding: 20px;
+    border: 1px solid lightgray;
+    background-color: rgba(255, 106, 6, 1);
+    color: lightgray;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+tr {
+    height: 70px;
+}
+th {
+    width: 150px;
+    font-size: 24px;
+}
+
+td {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+.odd {
+    background-color: rgba(255, 106, 6, 0.5);
+}
+.even {
+    background-color: rgba(255, 106, 6, 0.2);
+}
+
+.wiqends {
+    background-color: tomato;
+}
+
+#opp {
+    opacity: 0.5;
+    background-color: lightgray;
+}

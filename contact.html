@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container-md">
+        <header>
+            <ul class="nav justify-content-end bg-warning">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        log-in
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">
+                        sign-up
+                    </a>
+                </li>
+            </ul>
+            <!-- ქვედა მენიუს ზოლი -->
+
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <span><img src="images/bor_jpg.jpg" alt="borj" width="35px" height="35px"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="posts.html">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="calender.html">Calender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120)">
+        <div class="container-fluid">
+
+
+            <div class="row border" style="background-color: rgb(250, 230, 200); margin:auto;">
+                <div class="col-md-12">
+                    <h2>Contact US</h2>
+                </div>
+                <div class="col-md-12 cont_1">
+                    <div class="container-fluid">
+                        <h3 style="padding: 0 0 0 30px;">
+                            PhotoMarket
+                        </h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Goergia, Tbilisi</h6>
+                        <h6>Didube-Chugureti</h6>
+                        <h6>0180, Khudadov 5.</h6>
+                    </div>
+                    <div class="col-md-5">
+                        <h6>Mob: 577311009</h6>
+                        <h6>Mob: 514012010</h6>
+                        <h6>Email: giooorgi7@gmail.com</h6>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/logc.png" alt="logo" style="width: 80px;">
+                    </div>
+                </div>
+
+                <div class="col-md-12 cont_2">
+                    <div class="col-md-7 clm">
+                        <form action="/action_page.php">
+                            <div class="col-md-6 clm">
+
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                            </div>
+                            <div class="col-md-6 clm">
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                            </div>
+                            <div class="col-md-6 clm">
+
+                                <label for="mobile">Mobile number</label>
+                                <input type="text" id="mobile" name="mobile" placeholder="Your Mobile number...">
+                            </div>
+                            <div class="col-md-6 clm">
+
+                                <label for="fname">Email:</label>
+                                <input type="text" id="email" name="email" placeholder="Your Email...">
+                            </div>
+
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Georgia</option>
+                                <option value="canada">Armenia</option>
+                                <option value="usa">Azerbaijan</option>
+                                <option value="usa">Other</option>
+                            </select>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:150px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="col-md-5 clm">
+                        <div class="col-md-12">
+
+                            <label for="fname">Map:</label>
+                            <div class="mapf">
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.3082477901711!2d44.80503577174656!3d41.72461585400955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x532ade314f6def59!2z4YOu4YOj4YOT4YOQ4YOT4YOd4YOV4YOY4YOhIOGDpeGDo-GDqeGDkCAjNw!5e0!3m2!1sen!2sge!4v1627931048598!5m2!1sen!2sge"
+                                    width="410" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120)">
+
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+        <footer class="col-12">
+            footer Contact!
+        </footer>
+
+
+</body>
+
+</html>
