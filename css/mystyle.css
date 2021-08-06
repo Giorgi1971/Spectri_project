@@ -13,6 +13,7 @@
     content: "";
     clear: both;
     display: block;
+    height: fit-content;
     }
 
 
@@ -59,8 +60,10 @@ body{
     position: relative;
     font-family: cursive;
     /* border: 1px solid rgb(200, 120, 50); */
-    color: rgb(200, 120, 50);
-    text-align: center;
+    color: rgb(150, 80, 50);
+    text-shadow: 0 0 3px grey;
+    /* text-shadow: -1px -1px black, 1px 1px orangered; */
+    text-align: left;
 }
 
 .row img{
@@ -125,7 +128,7 @@ body{
     position: relative;
     font-family: cursive;
     text-shadow: 0 0 1px black;
-    height: 800px;
+    min-height: 800px;
     color: rgb(200, 120, 50);
     text-align: center;
 }
