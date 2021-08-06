@@ -355,6 +355,6 @@ footer{
     height: 250px;
     bottom: 0;
     padding: 10px;
-    color: rgb(200, 120, 50);
+    color: red;
     text-align: left!important;
 }
