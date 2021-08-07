@@ -141,10 +141,10 @@
                 </div>
 
                 <div id="dt3" class="col-md-2 dt3">
-                    <h4 onclick="document.bgColor='ff0000'">Heppyness</h4><br>
-                    <h4>Sunset</h4><br>
-                    <h4>Ocean</h4><br>
-                    <h4>Realax</h4><br>
+                    <h4 id="green1">Heppyness</h4><br>
+                    <h4 id="green2">Sunset</h4><br>
+                    <h4 id="green3">Ocean</h4><br>
+                    <h4 id="green4">Realax</h4><br>
                 </div>
 
                 <div id="d3" class="col-md-5 d3">
@@ -162,7 +162,7 @@
             </div>
         </div>
 
-
+<p style="color:mediumspringgreen;"></p>
         <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0!important;">
 
         <!-- <> -->
@@ -247,6 +247,35 @@
             
     </footer>
     </div>
-    </body>
+
+    <script>
+        document.getElementById("green1").onclick = function() {f1()};
+        
+        function f1() {
+          document.getElementsByClassName("row")[0].style.color = "green";
+
+        }
+
+        document.getElementById("green2").onclick = function() {f2()};
+        
+        function f2() {
+          document.getElementsByClassName("row")[0].style.color = "mediumspringgreen";
+
+        }
+
+        document.getElementById("green3").onclick = function() {f3()};
+        
+        function f3() {
+          document.getElementsByClassName("row")[0].style.color = "deepskyblue";
+
+        }
+
+        document.getElementById("green4").onclick = function() {fg()};
+        
+        function fg() {
+          document.getElementsByClassName("row")[0].style.color = "greenyellow";
+
+        }
+        </script>    </body>
     
     </html>
