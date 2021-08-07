@@ -89,9 +89,7 @@
 
         </header>
         <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0!important;">
-
         <br>
-
         <div class="container-fluid">
 
             <div class="row">
@@ -110,130 +108,150 @@
                                 <th>Saturday</th>
                                 <th>Sunday</th>
                             </tr>
-                            <tr class="even">
-                                <td id="opp">29</td>
+                            <tr class="even" id="t11">
                                 <td id="opp">30</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td class="wiqends">4</td>
-                                <td class="wiqends">5</td>
+                                <td id="opp">31</td>
+                                <td id="c1s" onclick="fd(this)">1</td>
+                                <td id="c2s" onclick="fd(this)">2</td>
+                                <td id="c3s" onclick="fd(this)">3</td>
+                                <td id="c4s" onclick="fd(this)" class="wiqends">4</td>
+                                <td id="c5s" onclick="fd(this)" class="wiqends">5</td>
                             </tr>
 
-                            <tr class="odd">
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td class="wiqends">11</td>
-                                <td class="wiqends">12</td>
-                            </tr>
-
-                            <tr class="even">
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td class="wiqends">18</td>
-                                <td class="wiqends">19</td>
-                            </tr>
-
-                            <tr class="odd">
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td class="wiqends">25</td>
-                                <td class="wiqends">26</td>
+                            <tr class="odd" id="t12">
+                                <td onclick="fd(this)">6</td>
+                                <td onclick="fd(this)" onclick="fd(this)">7</td>
+                                <td onclick="fd(this)">8</td>
+                                <td onclick="fd(this)">9</td>
+                                <td onclick="fd(this)">10</td>
+                                <td onclick="fd(this)" class="wiqends">11</td>
+                                <td onclick="fd(this)" class="wiqends">12</td>
                             </tr>
 
                             <tr class="even">
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
-                                <td>30</td>
-                                <td class="wiqends" id="opp">31</td>
-                                <td class="wiqends" id="opp">1</td>
-                                <td class="wiqends" id="opp">2</td>
+                                <td onclick="fd(this)">13</td>
+                                <td onclick="fd(this)" id="c14s">14</td>
+                                <td onclick="fd(this)" id="c15s">15</td>
+                                <td onclick="fd(this)">16</td>
+                                <td onclick="fd(this)">17</td>
+                                <td onclick="fd(this)" class="wiqends">18</td>
+                                <td onclick="fd(this)" class="wiqends">19</td>
                             </tr>
 
-                            <!-- <tr class="odd">
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td class="wiqends">6</td>
-                <td class="wiqends">7</td>
-            </tr> -->
+                            <tr class="odd">
+                                <td onclick="fd(this)">20</td>
+                                <td onclick="fd(this)">21</td>
+                                <td onclick="fd(this)">22</td>
+                                <td onclick="fd(this)">23</td>
+                                <td onclick="fd(this)">24</td>
+                                <td onclick="fd(this)" class="wiqends">25</td>
+                                <td onclick="fd(this)" class="wiqends">26</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td onclick="fd(this)">27</td>
+                                <td onclick="fd(this)">28</td>
+                                <td onclick="fd(this)">29</td>
+                                <td onclick="fd(this)">30</td>
+                                <td onclick="fd(this)" id="opp">1</td>
+                                <td onclick="fd(this)" class="wiqends" id="opp">2</td>
+                                <td onclick="fd(this)" class="wiqends" id="opp">3</td>
+                            </tr>
 
                         </table>
                     </div>
                 </section>
-                </section>
+
+                <h3 class="container-fluid" id="textjs">
+                    Choose the day you want!
+                </h3>
+                <button onclick="bt1(this)" id='sb1' style="visibility:hidden;">Confirm!</button>
             </div>
 
+
+            <script>
+                function fd(id) {
+
+                    var person = prompt("Please enter your name: ");
+                    if (person != null) {
+
+                        var numbx = prompt("Please enter Phone Number: ");
+                        if (numbx != null) {
+                            numx = id.textContent;
+                            document.getElementById("textjs").innerHTML = person + ", you booked <b style='color:red'>" + numx + " September!";
+                            document.getElementById("textjs").style.fontSize = "40px";
+                            document.getElementById("sb1").style.visibility = "visible";
+                        }
+                    }
+
+                }
+
+                function bt1(id) {
+                    document.getElementById("textjs").innerHTML = "Our representative will contact you shortly.";
+                    document.getElementById("textjs").style.fontSize = "40px";
+                    document.getElementById("textjs").style.color = "green";
+                    id.style.visibility = 'hidden';
+                }
+
+            </script>
             <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0!important;">
 
-            <!-- <> -->
-                <footer class="container-fluid" style="height: fit-content;">
-    
-                    <div class="rowh" style="height: auto;">
-    
-                        <div class="col-md-4">
-                            <img src="images/cam3.png" alt="">
-                            <hr style="margin: 7px!important;">
-                            <p>This is Profesional photograhy studio!</p>
-                        </div>
-    
-                        <div class="col-md-3">
-                            <i class="fa fa-address-card"></i>Tbilisi, Georgia
-                            <hr style="margin: 3px!important;">
-                            <h5><i class="fa fa-indent"></i>Useful links:</h5>
-                            <hr
-                                style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
-    
-                            <div class="col-md-6">
-                                <i class="fa fa-pencil-square-o"></i>About us<br>
-                                <i class="fa fa-file-text-o"></i>Services<br>
-                                <i class="fa fa-picture-o"></i>Projects<br>
-                                <i class="fa fa-th"></i>Our Team<br>
-                            </div>
-                            <div class="col-md-6">
-                                <i class="fa fa-university"></i>Contact us<br>
-                                <i class="fa fa-plane"></i>Blog<br>
-                                <i class="fa fa-soccer-ball-o"></i>Testion<br>
-                                <i class="fa fa-video-camera"></i>Brends<br>
-    
-                            </div>
-    
-    </div>
-    
-    <div class="col-md-1">
-    
-    </div>
-    
-                        <div class="col-md-4 float-left">
-                            <i class="fa fa-phone" style="font-size:15px"></i> +995 599-311-007
-                            <hr style="margin: 3px!important;">
-                            <h5><i class="fa fa-pie-chart"></i> Subscribe:</h5>
-                            <hr
-                                style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
-                                <div class="col-md-12">
-                            <h6>Reference site about profesional photografies, for do all for Kids! </h6></div>
-                            <input type="text"
-                                style="width:240px; padding-right: 0; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border: 1px solid saddlebrown; background-color: rgb(253, 249, 243);"
-                                placeholder="      Email Adress">
-    
-    
-                            <input type="text"
-                                style="width:50px; padding-left: 0; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid saddlebrown;background-color: rgb(248, 236, 219);"
-                                placeholder="  ->"><i class="fa fa-paper-plane" style="font-size:18px;color:red"></i>
-                        </div>
+            <footer class="container-fluid" style="height: fit-content;">
+
+                <div class="rowh" style="height: auto;">
+
+                    <div class="col-md-4">
+                        <img src="images/cam3.png" alt="">
+                        <hr style="margin: 7px!important;">
+                        <p>This is Profesional photograhy studio!</p>
                     </div>
+
+                    <div class="col-md-3">
+                        <i class="fa fa-address-card"></i>Tbilisi, Georgia
+                        <hr style="margin: 3px!important;">
+                        <h5><i class="fa fa-indent"></i>Useful links:</h5>
+                        <hr
+                            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
+
+                        <div class="col-md-6">
+                            <i class="fa fa-pencil-square-o"></i>About us<br>
+                            <i class="fa fa-file-text-o"></i>Services<br>
+                            <i class="fa fa-picture-o"></i>Projects<br>
+                            <i class="fa fa-th"></i>Our Team<br>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="fa fa-university"></i>Contact us<br>
+                            <i class="fa fa-plane"></i>Blog<br>
+                            <i class="fa fa-soccer-ball-o"></i>Testion<br>
+                            <i class="fa fa-video-camera"></i>Brends<br>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-1">
+
+                    </div>
+
+                    <div class="col-md-4 float-left">
+                        <i class="fa fa-phone" style="font-size:15px"></i> +995 599-311-007
+                        <hr style="margin: 3px!important;">
+                        <h5><i class="fa fa-pie-chart"></i> Subscribe:</h5>
+                        <hr
+                            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
+                        <div class="col-md-12">
+                            <h6>Reference site about profesional photografies, for do all for Kids! </h6>
+                        </div>
+                        <input type="text"
+                            style="width:240px; padding-right: 0; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border: 1px solid saddlebrown; background-color: rgb(253, 249, 243);"
+                            placeholder="      Email Adress">
+
+
+                        <input type="text"
+                            style="width:50px; padding-left: 0; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid saddlebrown;background-color: rgb(248, 236, 219);"
+                            placeholder="  ->"><i class="fa fa-paper-plane" style="font-size:18px;color:red"></i>
+                    </div>
+                </div>
                 <!-- </div> -->
                 <ul class="nav justify-content-end bg-warning">
                     <li class="nav-item">
@@ -243,23 +261,19 @@
                             <a href="#" class="fa fa-google"></a>
                         </div>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="login.html">
-                            log-in
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signup.html">
-                            sign-up
-                        </a>
-                    </li> -->
+
                 </ul>
-                
-                
-                
-                
-        </footer>
+
+
+
+
+            </footer>
         </div>
-        </body>
-        
-        </html>
+
+
+
+</body>
+
+</html>
+
+</html>
