@@ -1,0 +1,10 @@
+.rowh img{
+    border-radius: 10px;
+}
+
+
+.rowh img :hover{
+    border-radius: 10px;
+position: fixed;
+width: 80%;
+}

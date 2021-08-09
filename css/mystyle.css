@@ -372,11 +372,39 @@ footer{
 }
 
 .rmd{
-    position: sticky;
-    /* right: 15%; */
-    bottom: 0;
-    height: 800px;
-    /* width: 40%; */
-    background-color:rgb(248, 240, 230); 
-    padding:20px;
+    position: fixed;
+    left: 57%;
+    top: 11%;
+    height: 500px;
+    max-width: 25%;
+    /* background-color:rgb(248, 240, 230);  */
+    padding:10px;
+    z-index: 10;
 }
+
+.rowh a img{
+    width: 80%;
+     border: 20px solid rgb(240, 150, 80);
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0.7;
+    }
+
+
+.rowh img{
+        /* width: 80%; */
+         border: 20px solid rgb(255, 180, 120);
+          margin-top: 10px;
+          margin-bottom: 10px;
+          box-shadow: 5px 5px 10px grey;
+        }
+    
+    
+.rowh a img:hover{
+    border-radius: 50px;
+    width: 100%;
+    opacity: 1;
+    z-index: 20;
+}
+
+
