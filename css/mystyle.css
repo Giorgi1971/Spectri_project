@@ -22,6 +22,7 @@
     padding: 5px;
     }
 
+
 .fa {
     padding: 5px;
     font-size: 14px;
@@ -382,6 +383,7 @@ footer{
     z-index: 10;
 }
 
+
 .rowh a img{
     width: 80%;
      border: 20px solid rgb(240, 150, 80);
@@ -398,8 +400,8 @@ footer{
           margin-bottom: 10px;
           box-shadow: 5px 5px 10px grey;
         }
-    
-    
+
+
 .rowh a img:hover{
     border-radius: 50px;
     width: 100%;
@@ -408,3 +410,6 @@ footer{
 }
 
 
+#imgrot{
+    transform: rotateX(180deg);
+}
