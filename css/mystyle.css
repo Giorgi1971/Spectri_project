@@ -368,19 +368,15 @@ footer{
     height: auto;
     bottom: 0;
     padding: 10px;
-    /* color: red; */
     text-align: left!important;
 }
 
 .rmd{
-    position: fixed;
-    left: 57%;
-    top: 11%;
-    height: 500px;
-    max-width: 30%;
-    /* background-color:rgb(248, 240, 230);  */
+    position: relative;
+    height: auto;
+    max-width: 100%;
     padding:10px;
-    z-index: 10;
+    overflow: hidden;
 }
 
 

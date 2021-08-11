@@ -94,18 +94,17 @@
             style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0 0 25px 0!important;">
 
         <!-- ----------------- ქვევით იწყება შუა ნაწილი --------------- -->
-
         <div class="container-fluid">
 
             <div class="rowh">
                 <!-- აქედან იწყება პირველი posts სვეტი -->
-                <div class="col-md-12">
                     <div class="col-md-7" style="background-color:rgb(248, 236, 219); padding:20px">
                         <h3>Posts:</h3>
                         <hr style="width:100%; height: 5px; background-color:wheat;">
                         <h4> Author: Lali.</h4>
                         <a href="#">
-                            <img src="img/gal11.jpg" alt="" class="responsive"></a>
+                            <img src="img/gal11.jpg" alt="" class="responsive">
+                        </a>
                         <h5> Date:</h5>
                         <p> Text: It was a very memorable day! </p>
                         <p>Lali: it is a beautiful picture.</p>
@@ -119,7 +118,8 @@
                         <h4> Author: Lili.</h4>
                         <a href="#">
 
-                            <img src="img/17.jpg" alt="" class="responsive"></a>
+                            <img src="img/17.jpg" alt="" class="responsive">
+                        </a>
                         <h5> Date:</h5>
                         <p> Text: It was a very memorable day! </p>
                         <p>Lali: it is a beautiful picture.</p>
@@ -131,7 +131,8 @@
                         <hr style="width:100%; height: 5px; background-color:wheat;">
                         <h4> Author: Sali.</h4>
                         <a href="#">
-                            <img src="img/gal31.jpg" alt="" class="responsive"></a>
+                            <img src="img/gal31.jpg" alt="" class="responsive">
+                        </a>
                         <h5> Date:</h5>
                         <p> Text: It was a very memorable day! </p>
                         <p>Lali: it is a beautiful picture.</p>
@@ -166,79 +167,7 @@
 
                     </div>
 
-
-                    <!-- აქედან იწყება მეორე სვეტი -->
-                    <div class="col-md-5">
-                        <div class="col-md-12 rmd">
-                            <div ng-app="">
-
-                                Select a theme:
-                                <select ng-model="myChoice" style="margin-bottom: 10px!important;">
-                                    <option value="var1">Ocean
-                                    <option value="var2">Home
-                                    <option value="var3">Mountain
-                                    <option value="var4">Christmas
-                                </select>
-
-                                <!-- <hr> -->
-                                <div ng-switch="myChoice">
-
-                                    <div ng-switch-when="var1">
-                                        <!-- <h3>
-                                        თემა ზღვა!
-                                    </h3><br> -->
-                                        <img src="choise/a1.png" alt="" class="responsive" style="max-width: 400px;">
-                                        <p style="margin-top: 10px; font-style: italic;">Take pictures in sea.rays will
-                                            give the best colors!</p>
-                                    </div>
-
-                                    <div ng-switch-when="var2">
-                                        <!-- <h3>
-                                        თემა სახლი!
-                                    </h3><br> -->
-                                        <!-- <a href="#"> -->
-                                        <img src="choise/a2.png" alt="" class="responsive" style="max-width: 400px;">
-                                        <!-- </a> -->
-                                        <p style="margin-top: 10px; font-style: italic;">Photos in studio.
-                                            with best studio's bright lites!</p>
-                                    </div>
-
-                                    <div ng-switch-when="var3">
-                                        <!-- <h3>
-                                        თემა მთა!
-                                    </h3><br> -->
-                                        <!-- <a href="#"> -->
-                                        <img src="choise/a3.png" alt="" class="responsive" style="max-width: 400px;">
-                                        <!-- </a> -->
-                                        <p style="margin-top: 10px; font-style: italic;">Best in nature sun's rays will
-                                            give the best!</p>
-                                    </div>
-
-                                    <div ng-switch-when="var4">
-                                        <!-- <h3>
-                                        თემა შობა!
-                                    </h3><br> -->
-                                        <!-- <a href="#"> -->
-                                        <img src="choise/a4.png" alt="" class="responsive" style="max-width: 400px;">
-                                        <!-- </a> -->
-                                        <p style="margin-top: 10px; font-style: italic;">Christmas tree and light's give
-                                            best pictures!</p>
-                                    </div>
-
-                                    <div ng-switch-default>
-                                        <!-- <h3>
-                                        თემა აირჩიეთ!
-                                    </h3><br> -->
-                                        <!-- <a href="#"> -->
-                                        <img src="choise/aa1.png" alt="" class="responsive" style="max-width: 400px;">
-                                        <!-- </a> -->
-                                        <p style="margin-top: 10px; font-style: italic;">Choise best for You with
-                                            professional camera!</p>
-                                    </div>
-                                </div>
-                            <!-- </div> -->
-                            <hr>
-
+                        <div class="col-md-5" style="background-color:rgb(248, 236, 219); padding:20px; overflow:auto;">
                             <form action="posts.html" method="POST" name="login" enctype="multipart/form-data">
                                 <h4>Upload Photo and Comment it!</h4>
                                 <input type="file" name="file1" accept="file_extension"
@@ -248,117 +177,182 @@
                                 <input type="submit" value="Upload"
                                     style="margin-top: 5px!important; margin-bottom: 5px!important;">
                             </form>
+
+                            <hr>
+                            <hr>
+                        <div class="rmd" ng-app="">
+
+                                Select a theme:
+                                <select ng-model="myChoice" style="margin-bottom: 10px!important;">
+                                    <option value="var1">Ocean
+                                    <option value="var2">Home
+                                    <option value="var3">Mountain
+                                    <option value="var4">Christmas
+                                </select>
+
+                                <div ng-switch="myChoice">
+
+                                    <div ng-switch-when="var1">
+                                        <h3>
+                                            Topic: Ocean!
+                                        </h3>
+                                        <img src="choise/a1.png" alt="" class="responsive" style="max-width: 400px;">
+                                        <p style="margin-top: 10px; font-style: italic;">Take pictures in sea.rays will
+                                            give the best colors!</p>
+                                    </div>
+
+
+                                    <div ng-switch-when="var2">
+                                        <h3>
+                                            Topic: Home!
+                                        </h3>
+
+                                        <img src="choise/a2.png" alt="" class="responsive" style="max-width: 400px;">
+                                        <p style="margin-top: 10px; font-style: italic;">Photos in studio.
+                                            with best studio's bright lites!</p>
+                                    </div>
+
+                                    <div ng-switch-when="var3">
+                                        <h3>
+                                            Topic: Mountain!
+                                        </h3>
+                                        <img src="choise/a3.png" alt="" class="responsive" style="max-width: 400px;">
+                                        <p style="margin-top: 10px; font-style: italic;">Best in nature sun's rays will
+                                            give the best!</p>
+                                    </div>
+
+                                    <div ng-switch-when="var4">
+                                        <h3>
+                                            Topic: Christmas!
+                                        </h3>
+
+                                        <img src="choise/a4.png" alt="" class="responsive" style="max-width: 400px;">
+                                        <p style="margin-top: 10px; font-style: italic;">Christmas tree and light's give
+                                            best pictures!</p>
+                                    </div>
+
+                                    <div ng-switch-default>
+                                        <h3>
+                                        Choice topic!
+                                    </h3>                                        <img src="choise/aa1.png" alt="" class="responsive" style="max-width: 400px;">
+                                        <p style="margin-top: 10px; font-style: italic;">Choise best for You with
+                                            professional camera!</p>
+                            <hr>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
+
+            <hr
+                style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 25px 0 0 0!important;">
+
+            <!-- <> -->
+            <footer class="container-fluid" style="height: fit-content;">
+
+                <div class="rowh" style="height: auto;">
+
+                    <div class="col-md-4">
+                        <img src="images/cam3.png" alt=""
+                            style="border: none; box-shadow: none; margin-bottom: 15px!important; margin-top: 0px!important;">
+                        <!-- <hr style="margin-bottom: 5px!important;"> -->
+                        <p style="margin-bottom: 0!important;">This is Profesional photograhy studio!</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <i class="fa fa-address-card"></i>Tbilisi, Georgia
+                        <hr style="margin: 3px!important;">
+                        <h5><i class="fa fa-indent"></i>Useful links:</h5>
+                        <hr
+                            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px 3px 0 3px!important;">
+
+                        <div class="col-md-6">
+                            <i class="fa fa-pencil-square-o"></i>About us<br>
+                            <i class="fa fa-file-text-o"></i>Services<br>
+                            <i class="fa fa-picture-o"></i>Projects<br>
+                            <i class="fa fa-th"></i>Our Team<br>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="fa fa-university"></i>Contact us<br>
+                            <i class="fa fa-plane"></i>Blog<br>
+                            <i class="fa fa-soccer-ball-o"></i>Testion<br>
+                            <i class="fa fa-video-camera"></i>Brends<br>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-1">
+
+                    </div>
+
+                    <div class="col-md-4 float-left">
+                        <i class="fa fa-phone" style="font-size:15px"></i> +995 599-311-007
+                        <hr style="margin: 3px!important;">
+                        <h5><i class="fa fa-pie-chart"></i> Subscribe:</h5>
+                        <hr
+                            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
+                        <div class="col-md-12">
+                            <h6>Reference profesional photografies, </h6>
+                            <h6 style="margin: 3px;">to do all for Kids! </h6>
+                        </div>
+                        <input type="text"
+                            style="width:230px; height: 35px; margin: 0; padding: 0; border-radius: 20px; border: 1px solid saddlebrown; background-color: rgb(253, 249, 243);"
+                            placeholder="      Email Adress">
+
+
+                        <a href=""><i class="fa fa-paper-plane" style="font-size:18px;color:red"></i></a>
+                    </div>
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <div class="nav-link">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-google"></a>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
         </div>
 
-        <hr
-            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 25px 0 0 0!important;">
+        <script>
+            document.getElementById("green1").onclick = function () { f1() };
 
-        <!-- <> -->
-        <footer class="container-fluid" style="height: fit-content;">
+            function f1() {
+                document.getElementsByClassName("row")[0].style.color = "green";
+                document.getElementsByClassName("nav")[0].style.background = "green";
+                document.getElementsByClassName("nav-link")[3].style.color = "green";
+            }
 
-            <div class="rowh" style="height: auto;">
+            document.getElementById("green2").onclick = function () { f2() };
 
-                <div class="col-md-4">
-                    <img src="images/cam3.png" alt=""
-                        style="border: none; box-shadow: none; margin-bottom: 15px!important; margin-top: 0px!important;">
-                    <!-- <hr style="margin-bottom: 5px!important;"> -->
-                    <p style="margin-bottom: 0!important;">This is Profesional photograhy studio!</p>
-                </div>
+            function f2() {
+                document.getElementsByClassName("row")[0].style.color = "tomato";
+                document.getElementsByClassName("nav")[0].style.background = "tomato";
+                document.getElementsByClassName("nav-link")[3].style.color = "tomato";
+            }
 
-                <div class="col-md-3">
-                    <i class="fa fa-address-card"></i>Tbilisi, Georgia
-                    <hr style="margin: 3px!important;">
-                    <h5><i class="fa fa-indent"></i>Useful links:</h5>
-                    <hr
-                        style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px 3px 0 3px!important;">
+            document.getElementById("green3").onclick = function () { f3() };
 
-                    <div class="col-md-6">
-                        <i class="fa fa-pencil-square-o"></i>About us<br>
-                        <i class="fa fa-file-text-o"></i>Services<br>
-                        <i class="fa fa-picture-o"></i>Projects<br>
-                        <i class="fa fa-th"></i>Our Team<br>
-                    </div>
-                    <div class="col-md-6">
-                        <i class="fa fa-university"></i>Contact us<br>
-                        <i class="fa fa-plane"></i>Blog<br>
-                        <i class="fa fa-soccer-ball-o"></i>Testion<br>
-                        <i class="fa fa-video-camera"></i>Brends<br>
+            function f3() {
+                document.getElementsByClassName("row")[0].style.color = "deepskyblue";
+                document.getElementsByClassName("nav")[0].style.background = "deepskyblue";
+                document.getElementsByClassName("nav-link")[3].style.color = "deepskyblue";
+            }
 
-                    </div>
+            document.getElementById("green4").onclick = function () { fg() };
 
-                </div>
-
-                <div class="col-md-1">
-
-                </div>
-
-                <div class="col-md-4 float-left">
-                    <i class="fa fa-phone" style="font-size:15px"></i> +995 599-311-007
-                    <hr style="margin: 3px!important;">
-                    <h5><i class="fa fa-pie-chart"></i> Subscribe:</h5>
-                    <hr
-                        style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
-                    <div class="col-md-12">
-                        <h6>Reference profesional photografies, </h6>
-                        <h6 style="margin: 3px;">to do all for Kids! </h6>
-                    </div>
-                    <input type="text"
-                        style="width:230px; height: 35px; margin: 0; padding: 0; border-radius: 20px; border: 1px solid saddlebrown; background-color: rgb(253, 249, 243);"
-                        placeholder="      Email Adress">
-
-
-                    <a href=""><i class="fa fa-paper-plane" style="font-size:18px;color:red"></i></a>
-                </div>
-            </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <div class="nav-link">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google"></a>
-                    </div>
-                </li>
-            </ul>
-        </footer>
-    </div>
-
-    <script>
-        document.getElementById("green1").onclick = function () { f1() };
-
-        function f1() {
-            document.getElementsByClassName("row")[0].style.color = "green";
-            document.getElementsByClassName("nav")[0].style.background = "green";
-            document.getElementsByClassName("nav-link")[3].style.color = "green";
-        }
-
-        document.getElementById("green2").onclick = function () { f2() };
-
-        function f2() {
-            document.getElementsByClassName("row")[0].style.color = "tomato";
-            document.getElementsByClassName("nav")[0].style.background = "tomato";
-            document.getElementsByClassName("nav-link")[3].style.color = "tomato";
-        }
-
-        document.getElementById("green3").onclick = function () { f3() };
-
-        function f3() {
-            document.getElementsByClassName("row")[0].style.color = "deepskyblue";
-            document.getElementsByClassName("nav")[0].style.background = "deepskyblue";
-            document.getElementsByClassName("nav-link")[3].style.color = "deepskyblue";
-        }
-
-        document.getElementById("green4").onclick = function () { fg() };
-
-        function fg() {
-            document.getElementsByClassName("row")[0].style.color = "greenyellow";
-            document.getElementsByClassName("nav")[0].style.background = "greenyellow";
-            document.getElementsByClassName("nav-link")[3].style.color = "greenyellow";
-        }
-    </script>
+            function fg() {
+                document.getElementsByClassName("row")[0].style.color = "greenyellow";
+                document.getElementsByClassName("nav")[0].style.background = "greenyellow";
+                document.getElementsByClassName("nav-link")[3].style.color = "greenyellow";
+            }
+        </script>
 </body>
 
 </html>

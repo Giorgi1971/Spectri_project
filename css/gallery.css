@@ -5,11 +5,6 @@
     opacity: 1;
 }
 
-/* .navbar-nav li a{
-  font-size: 3em;
-} */
-
-
 .rowd::after {
   content: "";
   clear: both;
@@ -20,8 +15,6 @@
   position: relative;
   font-family: cursive;
   width: 100%;
-  /* color: rgb(200, 120, 50); */
-  /* text-align: center; */
 }
 
 .ttv{
@@ -31,16 +24,6 @@
     font-size: 50px;
     font-weight: bolder;
   }
-
-/* .dad li a{
-  color: rgb(246, 68, 187)!important;
-  text-shadow: crimson;
-
-}
-.ddd{
-  color: rgb(246, 68, 187)!important;
-  text-shadow: crimson;
-} */
 
 .pd1{
   margin: 0;
