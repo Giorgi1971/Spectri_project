@@ -27,14 +27,12 @@
 .ttv{
     writing-mode: vertical-rl;
     text-orientation:upright;
-    /* text-align: center; */
-    vertical-align: auto;
     color: white;
     font-size: 50px;
     font-weight: bolder;
   }
 
-.dad li a{
+/* .dad li a{
   color: rgb(246, 68, 187)!important;
   text-shadow: crimson;
 
@@ -42,7 +40,7 @@
 .ddd{
   color: rgb(246, 68, 187)!important;
   text-shadow: crimson;
-}
+} */
 
 .pd1{
   margin: 0;
