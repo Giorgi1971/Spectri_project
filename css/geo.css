@@ -1,0 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(avaza.ttf);
+  }
+  
+*{
+    font-family: myFirstFont;
+  }
