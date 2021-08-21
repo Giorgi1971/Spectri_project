@@ -19,12 +19,13 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/mystyle.css">
-    <link rel="stylesheet" href="css/geo.css">
     <!-- <link rel="stylesheet" href="css/calender.css"> -->
-    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+    <link rel="stylesheet" href="css/contact.css">
     <!-- <link rel="stylesheet" href="css/login.css"> -->
     <!-- <link rel="stylesheet" href="css/signup.css"> -->
     <!-- <link rel="stylesheet" href="css/gallery.css"> -->
+    <link rel="stylesheet" href="css/geo.css">
+
     <style>
         footer {
             background: rgb(248, 236, 219) url("footer/foot1111.png") fixed;
@@ -33,7 +34,7 @@
         }
     </style>
 
-    <title>HomeGeo</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -96,91 +97,93 @@
             </nav>
 
         </header>
-        <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0!important;">
-
-
+        <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0 0 25px 0!important;">
         <div class="container-fluid">
-
-            <div class="row">
-
-                <!-- ----------------- ქვევით იწყება შუა ნაწილი --------------- -->
-                <div id="dt1" class="col-md-4 dt1">
-                    <h2>gzamkvlevi</h2>
-                    <h4>saojaxo fotoebi</h4><br>
+            <div class="row border" style="background-color: rgb(250, 230, 200); margin:auto; padding-top: 20px;">
+                <div class="col-md-12">
+                    <h2>Contact US</h2>
+                </div>
+                <div class="col-md-12 cont_1">
+                    <div class="container-fluid">
+                        <h3 style="padding: 0 0 0 30px;">
+                            PhotoMarket
+                        </h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>Goergia, Tbilisi</h6>
+                        <h6>Didube-Chugureti</h6>
+                        <h6>0180, Khudadov 5.</h6>
+                    </div>
+                    <div class="col-md-5">
+                        <h6>Mob: 577311009</h6>
+                        <h6>Mob: 514012010</h6>
+                        <h6>Email: giooorgi7@gmail.com</h6>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/logc.png" alt="logo" style="width: 80px;">
+                    </div>
                 </div>
 
-                <div id="d1" class="col-md-4 d1">
-                    <h3>
-                        galerea!
-                    </h3><br>
-                    <a href="gallery.html">
-                        <img src="photo/M2_big.jpg" alt="" class="responsive">
-                    </a>
-                    <p style="margin-top: 20px; font-style: italic; text-align: left;">
-                        mobrZandiT CvenTan da miiReT dauviwyari fotoebi!</p>
-                </div>
+                <div class="col-md-12 cont_2">
+                    <div class="col-md-7 clm">
+                        <form action="/action_page.php">
+                            <div class="col-md-6 clm">
 
-                <div id="dt2" class="col-md-4 dt2 pl-5">
-                    <a href="contact.html">
-                        <h2>
-                            airCieT dRe!
-                        </h2>
-                    </a>
-                </div>
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                            </div>
+                            <div class="col-md-6 clm">
 
-                <div id="d2" class="col-md-5 d2">
-                    <h3>Sobas gilocavT!</h3><br>
-                    <a href="login.html">
-                        <img src="photo/newyear4.JPG" alt="" class="responsive">
-                    </a>
-                    <p style="margin-top: 20px; font-style: italic; text-align: left;">
-                        mobrZandiT CvenTan da miiReT dauviwyari fotoebi!</p>
-                </div>
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                            </div>
+                            <div class="col-md-6 clm">
 
-                <div id="d4" class="col-md-5 d4">
-                    <h3>SearCieT misaRebi dro!</h3><br>
-                    <a href="calender.html">
-                        <img src="photo/calender.png" alt="calender" class="responsive">
-                    </a>
-                    <p style="margin-top: 20px; font-style: italic; text-align: left;">
-                        mobrZandiT CvenTan da miiReT dauviwyari fotoebi!</p>
-                </div>
+                                <label for="mobile">Mobile number</label>
+                                <input type="text" id="mobile" name="mobile" placeholder="Your Mobile number...">
+                            </div>
+                            <div class="col-md-6 clm">
 
-                <div id="d5" class="col-md-5 d5">
-                    <h3>laSqrobebi!</h3>
-                    <br>
-                    <a href="contact.html">
-                        <img src="photo/d3.jpeg" alt="" class="responsive">
-                    </a>
-                    <p style="margin-top: 20px; font-style: italic; text-align: left;">
-                        mobrZandiT CvenTan da miiReT dauviwyari fotoebi!
-                    </p>
+                                <label for="fname">Email:</label>
+                                <input type="text" id="email" name="email" placeholder="Your Email...">
+                            </div>
 
-                </div>
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Georgia</option>
+                                <option value="canada">Armenia</option>
+                                <option value="usa">Azerbaijan</option>
+                                <option value="usa">Other</option>
+                            </select>
 
-                <div id="dt3" class="col-md-2 dt3">
-                    <h4 id="green1">zafxuli</h4><br>
-                    <h4 id="green2">daisi</h4><br>
-                    <h4 id="green3">zRva</h4><br>
-                    <h4 id="green4">simSvide</h4><br>
-                </div>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:150px"></textarea>
 
-                <div id="d3" class="col-md-5 d3">
-                    <h3>dauviwyari sofeli!</h3>
-                    <br>
-                    <a href="calender.html">
-                        <img src="photo/d4.jpg" alt="" class="responsive">
-                    </a>
-                    <p style="margin-top: 20px; font-style: italic;">mobrZandiT CvenTan da miiReT dauviwyari fotoebi!                   !</p>
-                </div>
+                            <input type="submit" value="Sent">
+                        </form>
+                    </div>
+                    <div class="col-md-5 clm">
+                        <div class="col-md-12">
 
-                <div id="dt4" class="col-md-2 dt4">
-                    <h6>informaciisTvis</h6>
-                    <h5>naxeT meti!</h5>
+                            <label for="fname">Map:</label>
+                            <div class="mapf">
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.3082477901711!2d44.80503577174656!3d41.72461585400955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x532ade314f6def59!2z4YOu4YOj4YOT4YOQ4YOT4YOd4YOV4YOY4YOhIOGDpeGDo-GDqeGDkCAjNw!5e0!3m2!1sen!2sge!4v1627931048598!5m2!1sen!2sge"
+                                    width="410" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>
-
+<br>
         <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0!important;">
 
         <!-- <> -->
@@ -249,42 +252,7 @@
                 </li>
             </ul>
         </footer>
-    </div>
-
-    <script>
-        document.getElementById("green1").onclick = function () { f1() };
-
-        function f1() {
-            document.getElementsByClassName("row")[0].style.color = "green";
-            document.getElementsByClassName("nav")[0].style.background = "green";
-            document.getElementsByClassName("nav-link")[3].style.color = "green";
-        }
-
-        document.getElementById("green2").onclick = function () { f2() };
-
-        function f2() {
-            document.getElementsByClassName("row")[0].style.color = "tomato";
-            document.getElementsByClassName("nav")[0].style.background = "tomato";
-            document.getElementsByClassName("nav-link")[3].style.color = "tomato";
-        }
-
-        document.getElementById("green3").onclick = function () { f3() };
-
-        function f3() {
-            document.getElementsByClassName("row")[0].style.color = "deepskyblue";
-            document.getElementsByClassName("nav")[0].style.background = "deepskyblue";
-            document.getElementsByClassName("nav-link")[3].style.color = "deepskyblue";
-        }
-
-        document.getElementById("green4").onclick = function () { fg() };
-
-        function fg() {
-            document.getElementsByClassName("row")[0].style.color = "greenyellow";
-            document.getElementsByClassName("nav")[0].style.background = "greenyellow";
-            document.getElementsByClassName("nav-link")[3].style.color = "greenyellow";
-            document.getElementsByClassName("nav-link")[3].style.textShadow = "1px 1px 1px black";
-        }
-    </script>
-</body>
-
-</html>
+        </div>
+    </body>
+    
+    </html>

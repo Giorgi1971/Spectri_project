@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <link rel="stylesheet" href="css/signup.css">
+    <!-- <link rel="stylesheet" href="css/gallery.css"> -->
+    <style>
+        footer {
+            background: rgb(248, 236, 219) url("footer/foot1111.png") fixed;
+            height: 220px;
+            /* border: 1px solid rgb(180, 120, 120); */
+        }
+    </style>
+    <link rel="stylesheet" href="css/geo.css">
+
+    <title>Calender</title>
+</head>
+
+<body>
+    <div class="container-md">
+        <header>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <div class="nav-link">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logingeo.html">
+                        Sesvla
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signupgeo.html">
+                        registracia
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="font-family: Arial, Helvetica, sans-serif;">
+                        ENG
+                    </a>
+                </li>
+            </ul>
+            <!-- ქვედა მენიუს ზოლი -->
+
+            <nav class="navbar navbar-expand-md" style="padding-top: 0!important; padding-bottom: 0!important;">
+                <a class="navbar-brand" href="#">
+                    <div id="imgrot">
+                    <span><img src="images/pp2.png" alt="borj" width="55px" height="35px" style="margin: 0 20px 0 30px;"></span>
+                        </div>
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">meniu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexgeo.html">mTavari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="postsgeo.html">postebi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallerygeo.html">galerea</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendergeo.html">kalendari</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactgeo.html">kontaqti</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0 0 25px 0!important;">
+
+        <div class="container-fluid">
+
+            <div class="rowh" style="text-align:center">
+
+                <section>
+                    <div>
+                        <table class="table table-bordered text-white">
+
+                            <caption>September</caption>
+                            <tr class="odd">
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                            <tr class="even" id="t11">
+                                <td id="opp">30</td>
+                                <td id="opp">31</td>
+                                <td id="c1s" onclick="fd(this)">1</td>
+                                <td id="c2s" onclick="fd(this)">2</td>
+                                <td id="c3s" onclick="fd(this)">3</td>
+                                <td id="c4s" onclick="fd(this)" class="wiqends">4</td>
+                                <td id="c5s" onclick="fd(this)" class="wiqends">5</td>
+                            </tr>
+
+                            <tr class="odd" id="t12">
+                                <td onclick="fd(this)">6</td>
+                                <td onclick="fd(this)" onclick="fd(this)">7</td>
+                                <td onclick="fd(this)">8</td>
+                                <td onclick="fd(this)">9</td>
+                                <td onclick="fd(this)">10</td>
+                                <td onclick="fd(this)" class="wiqends">11</td>
+                                <td onclick="fd(this)" class="wiqends">12</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td onclick="fd(this)">13</td>
+                                <td onclick="fd(this)" id="c14s">14</td>
+                                <td onclick="fd(this)" id="c15s">15</td>
+                                <td onclick="fd(this)">16</td>
+                                <td onclick="fd(this)">17</td>
+                                <td onclick="fd(this)" class="wiqends">18</td>
+                                <td onclick="fd(this)" class="wiqends">19</td>
+                            </tr>
+
+                            <tr class="odd">
+                                <td onclick="fd(this)">20</td>
+                                <td onclick="fd(this)">21</td>
+                                <td onclick="fd(this)">22</td>
+                                <td onclick="fd(this)">23</td>
+                                <td onclick="fd(this)">24</td>
+                                <td onclick="fd(this)" class="wiqends">25</td>
+                                <td onclick="fd(this)" class="wiqends">26</td>
+                            </tr>
+
+                            <tr class="even">
+                                <td onclick="fd(this)">27</td>
+                                <td onclick="fd(this)">28</td>
+                                <td onclick="fd(this)">29</td>
+                                <td onclick="fd(this)">30</td>
+                                <td onclick="fd(this)" id="opp">1</td>
+                                <td onclick="fd(this)" class="wiqends" id="opp">2</td>
+                                <td onclick="fd(this)" class="wiqends" id="opp">3</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </section>
+
+                <h3 class="container-fluid" id="textjs">
+                    Select the day you want to book!
+                </h3>
+                <button onclick="bt1(this)" id='sb1' style="visibility:hidden;">Confirm!</button>
+            </div>
+
+
+            <script>
+                function fd(id) {
+
+                    var person = prompt("Please enter your name: ");
+                    if (person != null) {
+
+                        var numbx = prompt("Please enter Phone Number: ");
+                        if (numbx != null) {
+                            numx = id.textContent;
+                            document.getElementById("textjs").innerHTML = person + " Please confirm your booking on day:<br> <b style='color:red'>" + numx + " September!";
+                            document.getElementById("textjs").style.fontSize = "40px";
+                            document.getElementById("sb1").style.visibility = "visible";
+                        }
+                    }
+                }
+                
+                function bt1(id) {
+                    document.getElementById("textjs").innerHTML = "Our representative will contact you shortly.";
+                    document.getElementById("textjs").style.fontSize = "40px";
+                    document.getElementById("textjs").style.color = "green";
+                    id.style.visibility = 'hidden';
+                }
+
+            </script>
+            <br>
+            <hr style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 0!important;">
+
+            <footer class="container-fluid" style="height: fit-content;">
+
+                <div class="rowh" style="height: auto;">
+    
+                    <div class="col-md-4">
+                        <img src="images/cam3.png" alt="" style="border: none; box-shadow: none; margin-bottom: 15px!important; margin-top: 0px!important;">
+                        <!-- <hr style="margin-bottom: 5px!important;"> -->
+                        <p style="margin-bottom: 0!important;">profesionaluri foto studia!</p>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <i class="fa fa-address-card"></i>Tbilisi, saqarTvelo
+                        <hr style="margin: 3px!important;">
+                        <h5><i class="fa fa-indent"></i>sasarg linkebi:</h5>
+                        <hr
+                            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px 3px 0 3px!important;">
+    
+                        <div class="col-md-6">
+                            <i class="fa fa-pencil-square-o"></i>Sesaxeb<br>
+                            <i class="fa fa-file-text-o"></i>servisi<br>
+                            <i class="fa fa-picture-o"></i>proeqti<br>
+                            <i class="fa fa-th"></i>gundi<br>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="fa fa-university"></i>kavSiri<br>
+                            <i class="fa fa-plane"></i>blogebi<br>
+                            <i class="fa fa-soccer-ball-o"></i>testi<br>
+                            <i class="fa fa-video-camera"></i>brendi<br>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-md-1">
+    
+                    </div>
+    
+                    <div class="col-md-4 float-left">
+                        <i class="fa fa-phone" style="font-size:15px"></i> +995 599-311-009
+                        <hr style="margin: 3px!important;">
+                        <h5><i class="fa fa-pie-chart"></i>gamowera:</h5>
+                        <hr
+                            style="height:3px;border-width:0;color:gray;background-color:rgb(180, 120, 120); margin: 3px!important;">
+                        <div class="col-md-12">
+                            <input type="text"
+                            style="width:220px; height: 40px; margin-bottom: 5px; padding-right: 0; border-radius: 20px; border: 1px solid saddlebrown; background-color: rgb(253, 249, 243);"
+                            placeholder="  Tqveni meili">
+                            <a href=""><i class="fa fa-paper-plane" style="font-size:18px;color:red"></i></a>
+                            <h6>kopireba nebadarTulia!</h6>
+                            <h6> @giorgi masxaraSvili</h6>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <div class="nav-link">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-google"></a>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+                    </div>
+
+</div>
+
+</body>
+
+</html>
