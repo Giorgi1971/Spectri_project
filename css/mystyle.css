@@ -3,6 +3,10 @@
     /* margin: auto; */
     }
 
+body{
+    font-family: 'Kalam', cursive;
+}
+
 .rowh::after {
     content: "";
     clear: both;
@@ -59,7 +63,7 @@ body{
 
 .rowh{
     position: relative;
-    font-family: cursive;
+    font-family: 'Kalam', cursive;
     /* border: 1px solid rgb(200, 120, 50); */
     color: rgb(150, 80, 50);
     text-shadow: 0 0 3px grey;
@@ -127,7 +131,7 @@ body{
     margin: 0;
     width: 100%;
     position: relative;
-    font-family: cursive;
+    font-family: 'Kalam', cursive;
     text-shadow: 0 0 1px black;
     min-height: 880px;
     color: rgb(200, 120, 50);
