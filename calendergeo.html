@@ -106,15 +106,15 @@
                     <div>
                         <table class="table table-bordered text-white">
 
-                            <caption>September</caption>
+                            <caption>თებერვალი</caption>
                             <tr class="odd">
-                                <th>Monday</th>
-                                <th>Tuesday</th>
-                                <th>Wednesday</th>
-                                <th>Thursday</th>
-                                <th>Friday</th>
-                                <th>Saturday</th>
-                                <th>Sunday</th>
+                                <th>orSabaTi</th>
+                                <th>samSabaTi</th>
+                                <th>oTxSabaTi</th>
+                                <th>xuTSabaTi</th>
+                                <th>paraskevi</th>
+                                <th>SabaTi</th>
+                                <th>kvira</th>
                             </tr>
                             <tr class="even" id="t11">
                                 <td id="opp">30</td>
@@ -171,31 +171,31 @@
                 </section>
 
                 <h3 class="container-fluid" id="textjs">
-                    Select the day you want to book!
+                    airCieT dRe viziti dasajavSnad!
                 </h3>
-                <button onclick="bt1(this)" id='sb1' style="visibility:hidden;">Confirm!</button>
+                <button onclick="bt1(this)" id='sb1' style="visibility:hidden;">დადასტურება!</button>
             </div>
 
 
             <script>
                 function fd(id) {
 
-                    var person = prompt("Please enter your name: ");
+                    var person = prompt("გთხოვთ ჩაწეროთ თქვენი სახელი: ");
                     if (person != null) {
 
-                        var numbx = prompt("Please enter Phone Number: ");
+                        var numbx = prompt("მიუთითეთ საკონტაქტო ნომერი: ");
                         if (numbx != null) {
                             numx = id.textContent;
-                            document.getElementById("textjs").innerHTML = person + " Please confirm your booking on day:<br> <b style='color:red'>" + numx + " September!";
-                            document.getElementById("textjs").style.fontSize = "40px";
+                            document.getElementById("textjs").innerHTML = person + " გთხოვთ დაადასტუროთ დაჯავშნის დღე:<br> <b style='color:red'>" + numx + " თებერვალი!";
+                            document.getElementById("textjs").style.fontSize = "30px";
                             document.getElementById("sb1").style.visibility = "visible";
                         }
                     }
                 }
                 
                 function bt1(id) {
-                    document.getElementById("textjs").innerHTML = "Our representative will contact you shortly.";
-                    document.getElementById("textjs").style.fontSize = "40px";
+                    document.getElementById("textjs").innerHTML = "გმადლობთ, ჩვენი თანამშრომლები მალე დაგიკავშირდებიან.";
+                    document.getElementById("textjs").style.fontSize = "30px";
                     document.getElementById("textjs").style.color = "green";
                     id.style.visibility = 'hidden';
                 }
